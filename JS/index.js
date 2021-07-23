@@ -42,7 +42,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Web Developer","Flutter Developer","Freelancer", "AI/ML Enthusiast"],
+        strings: ["Web Developer","Flutter Developer", "AI/ML Enthusiast"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
