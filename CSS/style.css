@@ -576,9 +576,9 @@ section .title::after{
 
 /* footer section styling */
 footer{
-    background: #111;
-    padding: 15px 23px;
-    color: #fff;
+    background: #000;
+    padding: 20px 30px;
+    color: #fff ;
     text-align: center;
 }
 footer span a{
@@ -586,7 +586,7 @@ footer span a{
     text-decoration: none;
 }
 footer span a:hover{
-    text-decoration: underline;
+    color: gray;
 }
 
 
