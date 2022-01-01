@@ -18,7 +18,7 @@ body {
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
 
-/* .canvas{
+.canvas {
   background-color: blueviolet;
-  padding: 10px;
-} */
+  height: 500px;
+}

@@ -1,6 +1,29 @@
-.header{
-    background-color: aquamarine;
-    height: 60px;
-    display: flex;
-    flex-wrap: wrap;
+.header {
+  background-color: aquamarine;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.logoContainer {
+  display: flex;
+  width: 200px;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  padding-left: 20px;
+}
+.headerItems {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 20px;
+}
+.headerItems > ul {
+  list-style: none;
+  display: flex;
+}
+
+.headerItems > ul > li {
+  margin: 10px;
 }
