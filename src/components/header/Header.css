@@ -1,0 +1,6 @@
+.header{
+    background-color: aquamarine;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
