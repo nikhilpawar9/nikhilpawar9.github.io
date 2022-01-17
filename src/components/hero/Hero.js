@@ -14,6 +14,8 @@ const Hero = () => {
     <div className="hero">
       <div className="wrapper">
         <h1 className="effect-shine">Nikhil Pawar</h1>
+       
+
       </div>
 
       <div className="canvas">
