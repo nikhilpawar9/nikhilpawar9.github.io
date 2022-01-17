@@ -1,8 +1,43 @@
-/* .hero{
-    display: flex;
-    flex-wrap: wrap;
-} */
+.hero {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 30px;
+}
 
-/* .canvas{
-    width: 700px;
-} */
+.wrapper {
+  flex: 2;
+}
+
+.canvas {
+  flex: 1;
+}
+
+.wrapper > h1 {
+  color: black;
+  text-align: center;
+  font-size: 5em;
+  font-family: "Dosis", sans-serif;
+}
+
+/* effect-shine */
+.wrapper > h1.effect-shine:hover {
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(238, 255, 6, 0.705) 70%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 1.5s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}

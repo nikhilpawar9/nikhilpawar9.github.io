@@ -1,28 +1,38 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Html, OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import {
+  Html,
+  OrbitControls,
+  PerspectiveCamera,
+  Plane,
+} from "@react-three/drei";
 import Hello from "../Hello";
-import './Hero.css'
+import "./Hero.css";
 
 const Hero = () => {
   return (
     <div className="hero">
+      <div className="wrapper">
+        <h1 className="effect-shine">Nikhil Pawar</h1>
+      </div>
+
       <div className="canvas">
         <Canvas
           colorManagement
+          shadowMap
           camera={{
             position: [-2, 0, 15],
             fov: 30,
             zoom: 2,
-            near: 1,
-            far: 1000,
+            near: 0.1,
+            far: 9999999,
           }}
         >
-          <OrbitControls  />
+          <OrbitControls />
 
-          <directionalLight intensity={0.5} />
-          <pointLight position={[-10, 0, -20]} intensity={0.4} />
-          <ambientLight intensity={0.3} />
+          <directionalLight intensity={0.8} />
+          <pointLight position={[0, 0.2, 0]} intensity={0.94} />
+          <ambientLight intensity={0.6} />
           <Suspense fallback={<Html>Loading...</Html>}>
             <Hello />
           </Suspense>

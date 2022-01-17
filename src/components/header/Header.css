@@ -1,5 +1,5 @@
 .header {
-  background-color: aquamarine;
+  background-color: #171718;
   height: 60px;
   display: flex;
   flex-wrap: wrap;
@@ -11,6 +11,11 @@
   align-items: center;
   flex: 1;
   padding-left: 20px;
+}
+
+.logoContainer > a {
+  color: aliceblue;
+  text-decoration: none;
 }
 .headerItems {
   display: flex;
@@ -26,4 +31,5 @@
 
 .headerItems > ul > li {
   margin: 10px;
+  color: aliceblue;
 }
