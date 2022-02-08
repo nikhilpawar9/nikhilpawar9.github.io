@@ -3,6 +3,7 @@
   justify-content: flex-end;
   align-items: center;
   padding-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .wrapper {
